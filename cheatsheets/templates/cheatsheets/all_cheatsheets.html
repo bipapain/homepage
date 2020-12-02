@@ -1,0 +1,28 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<h2 class="mt-5">Cheatsheets</h2>
+<hr>
+<div class="row">
+  {% for cheatsheet in cheatsheets %}
+  <div class="col-lg-4 col-md-6">
+
+<a href="{% url 'cheatsheets:detail' cheatsheet.id  %}">
+    <h3>{{ cheatsheet.title }}</h3>
+
+      <img src="{{ cheatsheet.image.url }}" class="img-fluid mb-2">
+    </a>
+
+
+  </div>
+  {% endfor %}
+</div>
+
+
+
+{% endblock %}
