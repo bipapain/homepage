@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'rn@gpg_a(09%4-ys=!l6r!-pgzm9p=mqi-zu7easak4l@*m0z#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bipa.pythonanywhere.com']
 
 # Application definition
 
