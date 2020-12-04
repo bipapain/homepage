@@ -10,6 +10,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+#my-name{
+    margin-left: 10px;
+}
+
 #blogtitle {
     font-size: 6rem;
 }
